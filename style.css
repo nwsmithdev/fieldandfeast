@@ -1,0 +1,30 @@
+/* CSS BY NICK SMITH */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* CSS RESET */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+/* ROOT VARIABLES */
+
+
+/* GLOBAL STYLES (Mobile-first Styling) */
+
+
+/* Media Query (Medium) */
+
+
+/* Media Query (Large) */
+
+
+/* Media Query (XL) */
