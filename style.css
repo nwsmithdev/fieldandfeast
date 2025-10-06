@@ -16,9 +16,130 @@ body {
 }
 
 /* ROOT VARIABLES */
-
+:root {
+    --color-blue: #1F2A44;
+    --color-green: #768858;
+    --color-champagne: #E5C185;
+    --color-linen: #F8F4EC;
+    --color-charcoal: #2B2B2B;
+    --color-white: #FAF9F6;
+    --font-main: 'Playfair Display', serif; 
+}
 
 /* GLOBAL STYLES (Mobile-first Styling) */
+body {
+    width: 100%;
+    font-family: var(--font-main);
+}
+
+hr {
+    background-color: var(--color-champagne);
+    border: none;
+    height: 2px;
+    margin-top: 2em;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.75rem;
+}
+
+/* header */
+#header-content {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    text-align: center;
+    padding: 1.25em 0;
+    margin: 0;
+}
+
+#header-img {
+    height: 200px;
+    margin: 0 auto;
+}
+
+#header-content h1 {
+    font-size: 3.25rem;
+    margin: 0;
+}
+
+#header-content p {
+    font-size: 1rem;
+    margin: 0.25em 1em;
+}
+
+/* nav */
+nav ul {
+    list-style: none;
+    padding: 0.75em 1em;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--color-champagne);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-blue);
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+/* about us */
+#about-us {
+    padding: 2em 1.15em 0 1.15em;
+    text-align: left;
+}
+
+#about-us h2 {
+    padding-bottom: 2em  0;
+    margin-bottom: 0.25em;
+    color: var(--color-blue);
+}
+
+#about-us p {
+    margin-top: 0;
+}
+
+/* Our Offerings */
+#offerings {
+    padding: 1.25em 1.15em;
+}
+
+#offerings h2 {
+    color: var(--color-blue);
+    margin-top: 0;
+}
+
+.offering-card {
+    background-color: var(--color-green);
+    color: var(--color-white);
+    text-align: left;
+    padding: 1.15em 1em 1em;
+    margin: 0 0 1em 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px var(--color-charcoal);
+}
+
+.offering-card h3 {
+    margin: 0 0 0.25em 0;
+    font-size: 1.35rem;
+}
+
+.offering-card p {
+    margin: 0 0 0.15em;
+    font-size: 1rem;
+}
+
+.offering-card ul {
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Gallery */
 
 
 /* Media Query (Medium) */
