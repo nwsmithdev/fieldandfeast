@@ -111,6 +111,11 @@ nav a {
     margin-top: 0;
 }
 
+#offering-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 .offering-card {
     background-color: var(--color-green);
     color: var(--color-white);
@@ -149,6 +154,12 @@ nav a {
 
 #gallery p {
     margin: 0.5em 0;
+}
+
+#gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
 }
 
 figure {
@@ -192,7 +203,7 @@ button {
 }
 
 #gallery hr {
-    margin-bottom: 1.25em;
+    margin: 2em 0;
 }
 
 /* Footer */
@@ -229,9 +240,119 @@ footer a {
 }
 
 /* Media Query (Medium) */
+@media (min-width: 600px) {
+    #offering-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+            "card1 card2"
+            "card3 card3";
+        gap: 1em;
+    }
 
+    #offering-grid .offering-card:nth-child(1) {
+        grid-area: card1;
+    }
+
+    #offering-grid .offering-card:nth-child(2) {
+        grid-area: card2;
+    }
+
+    #offering-grid .offering-card:nth-child(3) {
+        grid-area: card3;
+    }
+
+    #gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 /* Media Query (Large) */
-
+@media (min-width: 900px) {
+    #gallery-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 /* Media Query (XL) */
+@media (min-width: 1200px) {
+    /* font changes */
+
+    /* header */
+    #header-content h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    #header-content p {
+        font-size: 1.15rem;
+        margin: 0.25em 1em;
+    }
+
+    /* nav */
+    nav a {
+        font-size: 1.35rem;
+        font-weight: 700;
+    }
+
+    /* about us */
+    #about-us h2 {
+        font-size: 2em;
+    }
+
+    #about-us p {
+        font-size: 1.15em;
+    }
+
+    /* offerings */
+    #offerings h2 {
+        font-size: 2em;
+    }
+
+    .offering-card h3 {
+        font-size: 1.45rem;
+    }
+
+    .offering-card p {
+        font-size: 1.1rem;
+    }
+
+    /* gallery */
+    #gallery h2 {
+        font-size: 2em;
+    }
+
+    #gallery p {
+        font-size: 1.15rem;
+    }
+
+    /* layout changes */
+    nav ul {
+        padding: 0.75em 1em;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 5em;
+        justify-content: space-around;
+        background-color: var(--color-champagne);
+    }
+    
+    #about-us {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #offerings {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #gallery {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #gallery-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+}
